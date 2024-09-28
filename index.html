@@ -1,10 +1,77 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Goesniawan Xena Adikara</title>
-    </head>
-<body>
-    <h1>Goesniawan Xena Adikara</h1>
-    <p>1202223274</p>
-    <p><i>SI-46-04 - </i> <b><u>S1 Sistem Informasi</u></b></p>
-</body>
+<head>
+  <title>XENA</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<style>
+    .center {
+        margin: 0;
+        padding: 50;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 100;
+        padding: 200;
+        background-color: #f4f4f4;
+    }
+    .bio {
+        background-color: #eaeaea;
+        padding: 5px 30px ;
+        margin-bottom: 5px;
+    }
+    .sosmed {
+        padding: 10px;
+        ;
+    }
+    .container #waktu{
+        display: flex;
+        align-self: flex-end;
+        margin-top: 20px;
+        background-color: #369ab1;
+        border: 50px;
+        color: #ffff;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+</style>
+<div class="center">
+    <center><img src="IMG_1543.png" alt="foto" style="object-fit: cover; width:200px;height:200px;border-radius: 100%; margin-bottom: 10px;">
+    <div class="bio"><p>Goesniawan Xena Adikara 1202223274</p>
+        <p><i>SI-46-04 - </i> <b><u>S1 Sistem Informasi</u></b></p>
+    </div>
+
+    <div class="sosmed">
+        <a href="https://github.com/gxena" target="_blank">
+            <img 
+            src="github.jpeg"
+            style="object-fit: cover;width: 50px;height: 50px;border-radius: 100%;"/></a>
+    
+        <a href="https://www.instagram.com/goxenawan/" target="_blank">
+            <img 
+            src="ig.png"
+            style="object-fit: cover;width: 50px;height: 50px;border-radius: 100%;"/></a>
+    
+        <a href="https://www.youtube.com/@xenay6220" target="_blank">
+            <img 
+            src="Youtube_logo.png"
+            style="object-fit: cover;width: 50px;height: 50px;border-radius: 100%;"/></a>
+    </div>
+    </center>
+    <div id="waktu" align="right"></div>
+        </div>
+
+    <script>
+        function hari() {
+        let today = new Date().toISOString().slice(0, 10);
+        return today;
+    }
+
+    document.getElementById("waktu").innerHTML = hari();
+        </script>
+</div>
 </html>
